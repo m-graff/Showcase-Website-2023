@@ -71,12 +71,23 @@ h2 {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 150px;
-    gap: 72px;
+}
+
+.presentation-gauche {
+    width: 40%;
 }
 
 .presentation-gauche img {
-    border-radius: 25px
+    width: 90%;
 }
+
+.presentation-droite {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+}
+
 
 h3 {
     font-family: 'Righteous';
@@ -89,14 +100,11 @@ h3 {
     color: #5260F2;
 }
 
-.presentation-droite {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.presentation-dash {
+    border: 3px dashed #5260F2;
 }
 
 .presentation-droite p {
-    width: 700px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
