@@ -81,6 +81,15 @@ h2 {
     width: 90%;
 }
 
+.presentation-fleche {
+    position: absolute;
+    top: 1400px;
+    left: 30%;
+}
+.presentation-fleche img {
+
+}
+
 .presentation-droite {
     display: flex;
     flex-direction: column;
