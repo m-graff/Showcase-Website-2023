@@ -1,0 +1,442 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+   height: 120px;
+   text-align: center;
+}
+
+header img {
+    width: 120px;
+    height: 90px;
+}
+
+
+
+
+
+/* HERO BANNER VIDEO */
+#hero-banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 120px;
+    font-family: 'Righteous', cursive;  
+}
+
+h2 {
+    font-size: 42px;
+}
+
+
+
+
+
+/* SECTION PRESENTATION */
+#presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+    gap: 72px;
+}
+
+.presentation-gauche img {
+    border-radius: 25px
+}
+
+h3 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 89px;
+    display: flex;
+    align-items: center;
+    color: #5260F2;
+}
+
+.presentation-droite {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.presentation-droite p {
+    width: 700px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.presentation-droite button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #5260F2;
+    background: none;
+    border: 1px solid #5260F2;
+    border-radius: 5px;
+    padding: 1%;
+    width: 250px;
+    margin: auto;
+}
+
+
+
+
+
+/* SECTION EVENT */ 
+#events {
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 150px;
+    background-color: #5260F2;
+}
+
+#events h3 {
+    color: white;
+    padding-top: 50px;
+}
+
+
+
+
+
+/* SECTION PRESTATIONS */
+#prestations {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+#prestations h3 {
+    margin-bottom: 60px;
+}
+
+#prestations p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+/* Cards Prestation */
+.prestations-cards-bloc{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.prestations-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #E89505; 
+    padding: 25%;
+}
+
+.prestations-card h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #5260F2;
+    margin-bottom: 10%;
+}
+
+.prestations-card img {
+    border-radius: 50%;
+}
+
+
+
+
+
+/* SECTION LIEUX */
+#lieux {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25%;
+}
+
+#lieux h3 {
+    color: #5260F2;
+    margin-bottom: 5%;
+}
+
+area:hover {
+    outline: 2px solid #5260F2;
+    color: #E89505;
+}
+
+#popup {
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style pour les zones sélectionnables */
+.area-popup {
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid #5260F2;
+    border-radius: 50%;
+    background-color: rgba(82, 96, 242, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style pour les zones sélectionnables lorsque la souris est à l'intérieur */
+.area-popup:hover {
+    border: 2px solid #5260F2;
+    background-color: rgba(82, 96, 242, 0.5);
+}
+
+
+
+
+/* GALERIE PHOTOS */
+.bloc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr repeat(3, 1fr) 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.bloc-grid > * {
+    margin: 0;
+}
+
+.grid-1 { grid-area: 1 / 1 / 2 / 5; }
+.grid-2 { grid-area: 2 / 1 / 3 / 3; }
+.grid-3 { grid-area: 3 / 1 / 5 / 2; }
+.grid-4 { grid-area: 3 / 2 / 5 / 3; }
+.grid-5 { grid-area: 2 / 3 / 3 / 5; }
+.grid-6 { grid-area: 3 / 3 / 4 / 3; }
+.grid-7 { grid-area: 4 / 3 / 5 / 5; }
+.grid-8 { grid-area: 5 / 1 / 6 / 5; }
+
+
+
+
+
+/* FORMULAIRE DE CONTACT */
+#formulaire {
+    width: 50%;
+    margin: auto;
+}
+
+.formulaire-intro {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.formulaire-intro h3 {
+    margin-bottom: 2%;
+    display: block;
+}
+
+#contact {
+    border: 2px solid red;
+    margin: auto;
+    width: 100%;
+    background: #ccc;
+    padding: 2%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#contact div {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-message {
+    visibility: hidden;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 30px;
+    margin-top: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid gold;
+}
+
+.form-full-width {
+    grid-column: 1 / 3;
+}
+
+
+
+
+
+
+
+/* TEST SVG */
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 822;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+
+.test-svg {
+    margin-bottom: 500px;
+}
+
+
+/* TEST PIN MAP METHODE AJOUT BTN JS */
+
+/* PIN MAP */
+.test-pin {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.test-pin img {
+    width: 50%;
+}
+
+.test-pin i {
+    font-size: 30px;
+    color: #e15041;
+    transition: transform 0.2s ease-out;
+}
+
+.test-pin i:hover {
+    transform: scale(1.5);
+}
+
+.test-pin i:active {
+    transform: scale(1.8);
+}
+
+#button1, #button2 {
+    position: absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#button1 {
+    top: 35%;
+    left: 50%;
+}
+
+#button2 {
+    top: 60%;
+    left: 40%;
+}
+
+/* MODAL CARD AFTER PIN MAP */
+.close-button {
+    cursor: pointer;
+    color: red;
+    font-size: 30px;
+    text-align: right;
+
+    width: 35px;
+    border: 3px solid red;
+    border-radius: 25px;
+}
+
+.card {
+    width: 20%;
+    overflow: hidden;
+    position: absolute;
+    right: 5%;
+}
+
+.card-content {
+    border: 1px solid black;
+    height: auto;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    position: absolute;
+    top: 30%;
+    padding-left: 1%;
+    font-size: 18px;
+    color: white;
+}
