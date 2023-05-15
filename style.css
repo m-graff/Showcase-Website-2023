@@ -511,27 +511,15 @@ textarea:focus {
 
 
 
-/* TEST SVG */
-.path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear alternate infinite;
-  }
-  
-  @keyframes dash {
-    from {
-      stroke-dashoffset: 822;
-    }
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
 
 
+/* FOOTER */
 
-.test-svg {
-    margin-bottom: 500px;
+footer {
+    height: 275px;
+    background: #1D1D1B;
 }
 
-
-
+footer i {
+    color: white;
+}
