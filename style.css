@@ -86,9 +86,6 @@ h2 {
     top: 1400px;
     left: 30%;
 }
-.presentation-fleche img {
-
-}
 
 .presentation-droite {
     display: flex;
@@ -219,17 +216,37 @@ h3 {
 /* SECTION LIEUX */
 #lieux {
     height: 800px;
+    margin-bottom: 25%;
+}
+
+.lieux-contenu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 25%;
+    align-content: flex-end;
+    position: absolute;
+    right: 0;
+    gap: 50px;
+    width: 60%;
 }
 
 #lieux h3 {
     color: #5260F2;
-    margin-bottom: 5%;
 }
 
+.lieux-dash {
+    border: 3px dashed #5260F2;
+}
+
+#lieux p {
+    width: 80%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+/*
 area:hover {
     outline: 2px solid #5260F2;
     color: #E89505;
@@ -243,7 +260,7 @@ area:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Style pour les zones sélectionnables */
+/* Style pour les zones sélectionnables 
 .area-popup {
     cursor: pointer;
     position: absolute;
@@ -253,11 +270,105 @@ area:hover {
     transition: all 0.3s ease-in-out;
 }
 
-/* Style pour les zones sélectionnables lorsque la souris est à l'intérieur */
+/* Style pour les zones sélectionnables lorsque la souris est à l'intérieur 
 .area-popup:hover {
     border: 2px solid #5260F2;
     background-color: rgba(82, 96, 242, 0.5);
 }
+*/
+
+
+/* TEST PIN MAP METHODE AJOUT BTN JS */
+
+/* PIN MAP */
+.map {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    padding-top: 25%;
+    margin-left: 15%;
+}
+
+.map img {
+    width: 40%;
+}
+
+.map i {
+    font-size: 30px;
+    color: #e15041;
+    transition: transform 0.2s ease-out;
+}
+
+.map i:hover {
+    transform: scale(1.5);
+}
+
+.map i:active {
+    transform: scale(1.8);
+}
+
+#button1, #button2 {
+    position: absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#button1 {
+    top: 60%;
+    left: 22%;
+}
+
+#button2 {
+    top: 75%;
+    left: 18%;
+}
+
+/* MODAL CARD AFTER PIN MAP */
+.close-button {
+    cursor: pointer;
+    color: red;
+    font-size: 30px;
+    text-align: right;
+
+    width: 35px;
+    border: 3px solid red;
+    border-radius: 25px;
+}
+
+.card {
+    width: 20%;
+    overflow: hidden;
+    position: absolute;
+    right: 5%;
+}
+
+.card-content {
+    border: 1px solid black;
+    height: auto;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    position: absolute;
+    top: 30%;
+    padding-left: 1%;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -379,81 +490,4 @@ textarea:focus {
 }
 
 
-/* TEST PIN MAP METHODE AJOUT BTN JS */
 
-/* PIN MAP */
-.test-pin {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.test-pin img {
-    width: 50%;
-}
-
-.test-pin i {
-    font-size: 30px;
-    color: #e15041;
-    transition: transform 0.2s ease-out;
-}
-
-.test-pin i:hover {
-    transform: scale(1.5);
-}
-
-.test-pin i:active {
-    transform: scale(1.8);
-}
-
-#button1, #button2 {
-    position: absolute;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-#button1 {
-    top: 35%;
-    left: 50%;
-}
-
-#button2 {
-    top: 60%;
-    left: 40%;
-}
-
-/* MODAL CARD AFTER PIN MAP */
-.close-button {
-    cursor: pointer;
-    color: red;
-    font-size: 30px;
-    text-align: right;
-
-    width: 35px;
-    border: 3px solid red;
-    border-radius: 25px;
-}
-
-.card {
-    width: 20%;
-    overflow: hidden;
-    position: absolute;
-    right: 5%;
-}
-
-.card-content {
-    border: 1px solid black;
-    height: auto;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card h2 {
-    position: absolute;
-    top: 30%;
-    padding-left: 1%;
-    font-size: 18px;
-    color: white;
-}
