@@ -116,66 +116,73 @@
     <!-- Formulaire de contact -->
     <section id="formulaire">
         <div class="formulaire-intro">
-            <h3>Formulaire de contact</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.......................................................................</p>
+            <h3>Nous contacter !</h3>
+            <div class="formulaire-dash"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         </div>
-        <form id="contact">
-            <div>
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" id="nom" required>
-                <span class="error-message">Merci de renseigner un nom</span>
-            </div>
-            <div>
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" id="prenom" required>
-                <span class="error-message">Merci de renseigner un prénom</span>
-            </div>
-            <div>
-                <label for="prenom">Téléphone</label>
-                <input type="tel" name="telephone" id="telephone" required>
-                <span class="error-message">Merci de renseigner un numéro de téléphone</span>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-                <span class="error-message">Merci de renseigner une adresse mail</span>
-            </div>
-            <div class="form-full-width">
-                <label for="prenom">Établissement</label>
-                <input type="text" name="etablissement" id="etablissement" required>
-                <span class="error-message">Merci de renseigner une établissement</span>
-            </div>
 
-            <fieldset class="form-full-width">
-                <legend>Nombre de participants</legend>
-                    <div>
-                        <input type="radio" id="0-100" name="participant" value="0-100">
-                        <label for="0-100">0 - 100</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="100-200" name="participant" value="100-200">
-                        <label for="100-200">100 - 200</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="200-300" name="participant" value="200-300">
-                        <label for="200-300">200 - 300</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="300+" name="participant" value="300+">
-                        <label for="300+">300 +</label>
-                    </div>
-            </fieldset>
+        <div class="formulaire-fleche">
+            <img src="assets/fleche_contact.svg" alt="">
+        </div>
 
-            <div class="form-full-width">
-                <label for="message">Votre message</label>
-                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-            </div>
+        <div class="formulaire-content">
+            <form id="contact">
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" required>
+                    <span class="error-message">Merci de renseigner un nom</span>
+                </div>
+                <div>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom" required>
+                    <span class="error-message">Merci de renseigner un prénom</span>
+                </div>
+                <div>
+                    <label for="prenom">Téléphone</label>
+                    <input type="tel" name="telephone" id="telephone" required>
+                    <span class="error-message">Merci de renseigner un numéro de téléphone</span>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <span class="error-message">Merci de renseigner une adresse mail</span>
+                </div>
+                <div class="form-full-width">
+                    <label for="prenom">Établissement</label>
+                    <input type="text" name="etablissement" id="etablissement" required>
+                    <span class="error-message">Merci de renseigner une établissement</span>
+                </div>
 
-            <button type="submit" id="contact-btn">Envoyer</button>
-        </form>
+                <fieldset class="form-full-width">
+                    <legend>Nombre de participants</legend>
+                        <div>
+                            <input type="radio" id="0-100" name="participant" value="0-100">
+                            <label for="0-100">0 - 100</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="100-200" name="participant" value="100-200">
+                            <label for="100-200">100 - 200</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="200-300" name="participant" value="200-300">
+                            <label for="200-300">200 - 300</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="300+" name="participant" value="300+">
+                            <label for="300+">300 +</label>
+                        </div>
+                </fieldset>
 
-        <!-- TEST AJOUT IMG ILLUSTRATION -->
-        <img src="assets/illustration-3.jpg" alt="">
+                <div class="form-full-width">
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+
+                <button type="submit" id="contact-btn">Envoyer</button>
+            </form>
+            <!-- TEST AJOUT IMG ILLUSTRATION -->
+            <img src="assets/illustration-3.jpg" alt="">
+        </div>
 
     </section>
 

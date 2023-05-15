@@ -179,7 +179,7 @@ h3 {
 }
 
 /* Cards Prestation */
-.prestations-cards-bloc{
+.prestations-cards-bloc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -213,20 +213,22 @@ h3 {
 
 
 
+
+
+
 /* SECTION LIEUX */
 #lieux {
-    height: 800px;
-    margin-bottom: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .lieux-contenu {
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
-    position: absolute;
-    right: 0;
     gap: 50px;
-    width: 60%;
 }
 
 #lieux h3 {
@@ -246,47 +248,15 @@ h3 {
     line-height: 40px;
 }
 
-/*
-area:hover {
-    outline: 2px solid #5260F2;
-    color: #E89505;
-}
-
-#popup {
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Style pour les zones sélectionnables 
-.area-popup {
-    cursor: pointer;
-    position: absolute;
-    border: 2px solid #5260F2;
-    border-radius: 50%;
-    background-color: rgba(82, 96, 242, 0.3);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Style pour les zones sélectionnables lorsque la souris est à l'intérieur 
-.area-popup:hover {
-    border: 2px solid #5260F2;
-    background-color: rgba(82, 96, 242, 0.5);
-}
-*/
-
 
 /* TEST PIN MAP METHODE AJOUT BTN JS */
 
 /* PIN MAP */
 .map {
     display: flex;
-    justify-content: left;
     position: relative;
-    padding-top: 25%;
-    margin-left: 15%;
+    width: 100%;
+    padding-left: 5%;
 }
 
 .map img {
@@ -314,13 +284,13 @@ area:hover {
 }
 
 #button1 {
-    top: 60%;
-    left: 22%;
+    top: 35%;
+    left: 25%;
 }
 
 #button2 {
-    top: 75%;
-    left: 18%;
+    top: 57%;
+    left: 24%;
 }
 
 /* MODAL CARD AFTER PIN MAP */
@@ -360,7 +330,37 @@ area:hover {
 }
 
 
+/* TEST METHODE MAP AREA 
 
+area:hover {
+    outline: 2px solid #5260F2;
+    color: #E89505;
+}
+
+#popup {
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style pour les zones sélectionnables 
+.area-popup {
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid #5260F2;
+    border-radius: 50%;
+    background-color: rgba(82, 96, 242, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style pour les zones sélectionnables lorsque la souris est à l'intérieur 
+.area-popup:hover {
+    border: 2px solid #5260F2;
+    background-color: rgba(82, 96, 242, 0.5);
+}
+*/
 
 
 
@@ -403,16 +403,26 @@ area:hover {
 
 
 
+
+
+
+
+
 /* FORMULAIRE DE CONTACT */
 #formulaire {
-    width: 50%;
-    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .formulaire-intro {
-    margin: auto;
-    text-align: center;
     margin-bottom: 5%;
+    text-align: left;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .formulaire-intro h3 {
@@ -420,10 +430,44 @@ area:hover {
     display: block;
 }
 
+.formulaire-dash {
+    border: 3px dashed #5260F2;
+}
+
+.formulaire-intro p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.formulaire-fleche {
+    margin-right: 15%;
+    position: absolute;
+    margin-top: 25%;
+}
+
+.formualaire-fleche img {
+    width: auto;
+    object-fit: contain;
+}
+
+.formulaire-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.formulaire-content img {
+    width: 40%;
+    margin-top: 20%;
+    object-fit: contain;
+}
+
 #contact {
-    border: 2px solid red;
     margin: auto;
-    width: 100%;
+    width: 50%;
     background: #ccc;
     padding: 2%;
 
