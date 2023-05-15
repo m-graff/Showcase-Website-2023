@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunwell</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" title="Retour en haut de page">
+            <img src="" alt="Logo">
+        </a>
+    </header>
+
+    <!-- Hero Banner contenant la vidéo de présentation -->
+    <section id="hero-banner">
+        <video autoplay loop id="video">
+            <source src="" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>SUNWELL</h1>
+            <h2>Lorem ipsum et fatuorum bla bla</h2>
+        </div>
+    </section>
+
+    <!-- Bloc Présentation -->
+    <section id="presentation">
+        <div class="presentation-gauche">
+            <img src="" alt="">
+        </div>
+        <div class="presentation-droite">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+            <button>Contact</button>
+        </div>
+    </section>
+
+    <!-- Bloc Events -->
+    <section id="events">
+        <h3>Plot Twist</h3>
+    </section>
+
+    <!-- Bloc Prestations -->
+    <section id="prestations">
+        <h3>Prestations</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    
+        <div class="prestations-cards-bloc">
+            <div class="prestations-card">
+                <h4>Hébergement</h4>
+                <img src="" alt="">
+            </div>
+            <div class="prestations-card">
+                <h4>Restauration</h4>
+                <img src="" alt="">
+            </div>
+            <div class="prestations-card">
+                <h4>Animations</h4>
+                <img src="" alt="">
+            </div>
+            <div class="prestations-card">
+                <h4>DJ</h4>
+                <img src="" alt="">
+            </div>
+            <div class="prestations-card">
+                <h4>Transport</h4>
+                <img src="" alt="">
+            </div>
+            <div class="prestations-card">
+                <h4>Encadrement</h4>
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloc Lieux -->
+    <section id="lieux">
+        <!--    TEST - PIN MAP METHODE AJOUT BTN JS     -->
+        <div class="test-pin">
+            <img src="assets/map.png" alt="" id="image">
+            <div id="button1">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div id="button2">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie photos -->
+    <section class="bloc-grid">
+        <div class="grid-1"><img src="assets/galerie-1.jpg" alt=""></div>
+        <div class="grid-2"><img src="assets/galerie-2.jpg" alt=""></div>
+        <div class="grid-3"><img src="assets/galerie-3.jpg" alt=""></div>
+        <div class="grid-4"><img src="assets/galerie-4.jpg" alt=""></div>
+        <div class="grid-5"><img src="assets/galerie-5.jpg" alt=""></div>
+        <div class="grid-6"><img src="assets/galerie-6.jpg" alt=""></div>
+        <div class="grid-7"><img src="assets/galerie-7.jpg" alt=""></div>
+        <div class="grid-8"><img src="assets/galerie-8.jpg" alt=""></div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section id="formulaire">
+        <div class="formulaire-intro">
+            <h3>Formulaire de contact</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.......................................................................</p>
+        </div>
+        <form id="contact">
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" required>
+                <span class="error-message">Merci de renseigner un nom</span>
+            </div>
+            <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" required>
+                <span class="error-message">Merci de renseigner un prénom</span>
+            </div>
+            <div>
+                <label for="prenom">Téléphone</label>
+                <input type="tel" name="telephone" id="telephone" required>
+                <span class="error-message">Merci de renseigner un numéro de téléphone</span>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <span class="error-message">Merci de renseigner une adresse mail</span>
+            </div>
+            <div class="form-full-width">
+                <label for="prenom">Établissement</label>
+                <input type="text" name="etablissement" id="etablissement" required>
+                <span class="error-message">Merci de renseigner une établissement</span>
+            </div>
+
+            <fieldset class="form-full-width">
+                <legend>Nombre de participants</legend>
+                    <div>
+                        <input type="radio" id="0-100" name="participant" value="0-100">
+                        <label for="0-100">0 - 100</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="100-200" name="participant" value="100-200">
+                        <label for="100-200">100 - 200</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="200-300" name="participant" value="200-300">
+                        <label for="200-300">200 - 300</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="300+" name="participant" value="300+">
+                        <label for="300+">300 +</label>
+                    </div>
+            </fieldset>
+
+            <div class="form-full-width">
+                <label for="message">Votre message</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+
+            <button type="submit" id="contact-btn">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- <script src="scripts/index.js"></script> -->
+    <script src="https://kit.fontawesome.com/34685fabef.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
