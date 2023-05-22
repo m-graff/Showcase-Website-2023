@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -267,11 +268,9 @@ h3 {
 .prestations-cards-bloc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
-    width: 80%;
-    margin: auto;
-    padding-top: 10%;
+    grid-gap: 50px;
+    justify-items: center;
+    margin-top: 5%; 
 }
 
 .prestations-card {
@@ -280,8 +279,8 @@ h3 {
     border: 2px solid #E89505; 
     background: #FFF9F1;
     border-radius: 30px;
-    width: 40vh;
-    height: 40vh;
+    height: 260px;
+    width: 310px;
 }
 
 .prestations-card h4 {
@@ -296,13 +295,21 @@ h3 {
 }
 
 .prestations-card img {
-    width: 30%;
+    width: 20%;
     margin-left: 5%;
 }
 
+/*
 .icone-container {
     margin-top: 30%;
-    margin-left: 60%;
+    margin-left: 65%;
+    padding-bottom: 7%;
+}
+*/
+
+.icone-container {
+    padding-left: 50%;
+    padding-top: 10%;
 }
 
 .icone1 {
@@ -394,6 +401,8 @@ h3 {
     color: white; 
     padding-top: 30%;
 }
+
+
 
 
 
@@ -706,4 +715,62 @@ footer {
 
 footer i {
     color: white;
+}
+
+
+
+
+
+
+
+/* TEST RESPONSIVE --- PRESTATIONS */ 
+/* Media Queries Desktop  */
+@media only screen and (max-width: 1300px) {
+
+}
+
+/* Media Queries tablettes  */
+@media only screen and (max-width: 768px) {
+    #prestations {
+        padding: 5%;
+        margin-bottom: 100px;
+    }
+
+    #prestations p {
+        font-size: 24px;
+        line-height: 36px;
+        width: 100%;
+    }
+
+    .prestations-cards-bloc {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    .prestations-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .prestations-card h4 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .prestations-card img {
+        width: 15%;
+        margin-left: 5%;
+    }
+}
+
+/* Media Queries mobiles */
+@media only screen and (max-width: 480px) {
+    #prestations {
+        padding: 5%;
+    }
+
+    .prestations-cards-bloc {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
 }
