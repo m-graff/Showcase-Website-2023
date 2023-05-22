@@ -70,7 +70,7 @@ h2 {
     height: 700px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
 }
 
 .presentation-gauche {
@@ -138,21 +138,52 @@ h3 {
 
 
 
+
+
 /* SECTION EVENT */ 
 #events {
-    height: 600px;
+    height: 800px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     margin-bottom: 150px;
-    background-color: #5260F2;
+    
+}
+
+.events-left {
+    width: 60%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.events-right {
+    position: absolute;
+    right: 0;
+ }
+ 
+.events-right img {
+    height: 800px;
 }
 
 #events h3 {
-    color: white;
+    color: #5260F2;
     padding-top: 50px;
+    justify-content: end;
 }
 
+.event-dash {
+    border: 3px dashed #5260F2;
+}
+
+#events p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    color: #5260F2;
+}
 
 
 
