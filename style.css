@@ -561,6 +561,41 @@ area:hover {
 
 
 
+/* LIEN */
+#link {
+    height: 350px;
+    background: #1D1D1B;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link button {
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#link button:hover {
+    background-color: #5260F2;
+    color: white;
+}
+
+#link i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+#link span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+
 
 
 
