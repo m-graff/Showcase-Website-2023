@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    overflow-x: hidden;
 }
 
 header {
@@ -602,7 +601,21 @@ area:hover {
 
 
 /* GALERIE PHOTOS */
-.bloc-grid {
+#galerie {
+    margin-top: 5%;
+}
+
+#galerie h3 {
+    width: 70%;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.galerie-dash {
+    width: 70%;
+}
+
+.galerie-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2fr repeat(3, 1fr) 2fr;
@@ -614,7 +627,11 @@ area:hover {
     overflow-x: hidden;
 }
 
-.bloc-grid > * {
+.galerie-dash {
+    border: 3px dashed #5260F2;
+}
+
+.galerie-container > * {
     margin: 0;
 }
 
@@ -746,14 +763,61 @@ textarea:focus {
 footer {
     height: 275px;
     background: #1D1D1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-footer i {
+footer i, footer span {
     color: white;
 }
 
+footer img {
+  
+}
 
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 5%;
+}
 
+.footer-info {
+    padding: 5%;
+}
+
+.footer-info span  {
+   margin-left: 10%;
+}
+
+.footer-legal {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.footer-center {
+    width: 40%;
+    text-align: center;
+}
+
+.footer-center img {
+   width: 30%;
+   border-radius: 50%;
+   object-fit: contain;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    margin-right: 5%;
+    gap: 10%;
+}
+
+.footer-right i {
+    font-size: 30px;
+}
 
 
 
