@@ -191,57 +191,60 @@
         <div class="formulaire-content">
             <form id="contact">
                 <div>
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" required>
+                    <label for="nom"></label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom" required>
                     <span class="error-message">Merci de renseigner un nom</span>
                 </div>
                 <div>
-                    <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" required>
+                    <label for="prenom"></label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
                     <span class="error-message">Merci de renseigner un prénom</span>
                 </div>
                 <div>
-                    <label for="prenom">Téléphone</label>
-                    <input type="tel" name="telephone" id="telephone" required>
+                    <label for="prenom"></label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Téléphone" required>
                     <span class="error-message">Merci de renseigner un numéro de téléphone</span>
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                     <span class="error-message">Merci de renseigner une adresse mail</span>
                 </div>
                 <div class="form-full-width">
-                    <label for="prenom">Établissement</label>
-                    <input type="text" name="etablissement" id="etablissement" required>
+                    <label for="prenom"></label>
+                    <input type="text" name="etablissement" id="etablissement" placeholder="Établissement" required>
                     <span class="error-message">Merci de renseigner une établissement</span>
                 </div>
 
-                <fieldset class="form-full-width">
+                <fieldset class="form-full-width" id="form-radio-container">
                     <legend>Nombre de participants</legend>
-                        <div>
-                            <input type="radio" id="0-100" name="participant" value="0-100">
-                            <label for="0-100">0 - 100</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="100-200" name="participant" value="100-200">
-                            <label for="100-200">100 - 200</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="200-300" name="participant" value="200-300">
-                            <label for="200-300">200 - 300</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="300+" name="participant" value="300+">
-                            <label for="300+">300 +</label>
-                        </div>
+                    <div class="form-radio">
+                        <label for="0-100">0 - 100</label>
+                        <input type="radio" id="0-100" name="participant" value="0-100">
+                    </div>
+                    <div class="form-radio">
+                        <label for="100-200">100 - 200</label>
+                        <input type="radio" id="100-200" name="participant" value="100-200">
+                    </div>
+                    <div class="form-radio">
+                        <label for="200-300">200 - 300</label>
+                        <input type="radio" id="200-300" name="participant" value="200-300">
+                    </div>
+                    <div class="form-radio">
+                        <label for="300+">300 +</label>
+                        <input type="radio" id="300+" name="participant" value="300+">
+                    </div>
                 </fieldset>
+                
 
-                <div class="form-full-width">
+                <div class="form-full-width" id="form-message">
                     <label for="message">Votre message</label>
                     <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                 </div>
-
-                <button type="submit" id="contact-btn">Envoyer</button>
+                
+                <div class="contact-btn-container">
+                    <button type="submit" id="contact-btn">ENVOYER</button>
+                </div>
             </form>
             <!-- TEST AJOUT IMG ILLUSTRATION -->
             <img src="assets/illustration-3.jpg" alt="">
