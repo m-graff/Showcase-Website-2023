@@ -1,4 +1,4 @@
-/*--    TEST - PIN MAP METHODE AJOUT BTN JS     -*/
+/*--    Lieux : Pin Map     -*/
 const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const image = document.getElementById('image');
@@ -29,13 +29,17 @@ function createCard(photo, title, description) {
   cardContent.classList.add('card-content');
   card.appendChild(cardContent);
 
+  const cardHeader = document.createElement('div');
+  cardHeader.classList.add('card-header');
+  cardContent.appendChild(cardHeader);
+
   const cardPhoto = document.createElement('img');
   cardPhoto.src = photo;
-  cardContent.appendChild(cardPhoto);
+  cardHeader.appendChild(cardPhoto);
 
   const cardTitle = document.createElement('h2');
   cardTitle.textContent = title;
-  cardContent.appendChild(cardTitle);
+  cardHeader.appendChild(cardTitle);
 
   const cardNumber = document.createElement('div');
   cardNumber.classList.add('card-number')
@@ -85,11 +89,8 @@ function createCard(photo, title, description) {
   interestsTwo.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
   cardInterests.appendChild(interestsTwo)
 
-
-
-
-
   return card;
+
 }
 
 
@@ -107,3 +108,19 @@ closeButton.addEventListener("click", () => {
 });
 */
 
+
+/* -- Bouton Scroll to Top --*/
+let btn = document.getElementById('scrollToTop');
+
+window.onscroll = function() {
+  if (window.pageYOffset > 300) {
+    btn.classList.add('show');
+  } else {
+    btn.classList.remove('show');
+  }
+};
+
+btn.addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});

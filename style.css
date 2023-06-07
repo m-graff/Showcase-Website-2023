@@ -342,7 +342,7 @@ h3 {
     display: flex;
     flex-direction: column;
     border: 2px solid #E89505; 
-    background: #FFF9F1;
+    background: white;
     border-radius: 30px;
     height: 260px;
     width: 310px;
@@ -578,6 +578,7 @@ h3 {
     width: 30px;
     position: absolute;
     right: 0;
+    z-index: 1;
 }
 
 .card {
@@ -587,17 +588,27 @@ h3 {
     position: absolute;
     right: 15%;
     top: 15%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .card-content {
-    border: 1px solid black;
+    border-radius: 5px;
     height: 100%;
 }
 
-.card img {
+
+
+.card-header {
+    position: relative;
     width: 100%;
-    height: auto;
-}
+  }
+  
+  .card-header img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
 
 .card h2 {
     position: absolute;
@@ -1027,6 +1038,50 @@ footer i, footer span {
 
 
 
+/* BOUTON SCROLL TO TOP */
+#scrollToTop {
+    display: inline-block;
+    background-color: #5260F2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#scrollToTop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#scrollToTop:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#scrollToTop:active {
+    background-color: #555;
+}
+
+#scrollToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
 
 /* TEST RESPONSIVE --- PRESTATIONS */ 
 /* Media Queries Desktop  */
@@ -1079,13 +1134,3 @@ footer i, footer span {
         grid-gap: 10px;
     }
 }
-
-
-
-
-
-
-
-
-
-
