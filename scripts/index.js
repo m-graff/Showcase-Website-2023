@@ -1,15 +1,45 @@
-/*--    Lieux : Pin Map     -*/
+/*-- Récupération des datas pour les Cards Map --*/
+async function getCardsMap() {
+  await fetch("./data/localisations.json")
+      .then((res) => res.json())
+      .then((data) => (localisations = data.localisations));
+    return {
+      localisations: [...localisations]
+    };
+}
+
+async function displayCardsMap() {
+  try {
+    const { localisations } = await getCardsMap();
+    // Utilisez les données de localisation pour créer les cartes
+    localisations.forEach((localisation) => {
+      const card = createCard(
+        localisation.photo,
+        localisation.name,
+        localisation.description
+      );
+      // Insérez la carte où vous le souhaitez dans le DOM
+      image.insertAdjacentElement('afterend', card);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}
+displayCardsMap();
+
+
+/*--    Lieux : Pin Map     --*/
 const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const image = document.getElementById('image');
 
 button1.addEventListener('click', () => {
-  const card = createCard('assets/camping_1.jpg', 'Mittersheim');
+  const card = createCard('assets/camping_1.jpg', 'ISS');
   image.insertAdjacentElement('afterend', card);
 });
 
 button2.addEventListener('click', () => {
-  const card = createCard('assets/camping_1.jpg', 'Hubble');
+  const card = createCard('assets/camping_2.jpg', 'Hubble');
   image.insertAdjacentElement('afterend', card);
 });
 

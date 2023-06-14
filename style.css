@@ -1134,3 +1134,50 @@ footer i, footer span {
         grid-gap: 10px;
     }
 }
+
+
+.test svg {
+    border: 2px solid red;
+}
+
+svg {
+    width: 200px;
+    height: 200px; 
+    margin: 0 auto;
+    .draw-arrow {  
+      stroke-width: 5;
+      stroke: dodgerblue; 
+      fill: none;
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400; 
+      animation-duration: 2.0s;
+      animation-fill-mode: forwards;
+      animation-name: draw;
+      &.tail-1 {
+        animation-delay: .5s;
+      }
+      &.tail-2 {
+        animation-delay: .7s;
+      }
+    }
+  }
+  @keyframes draw {
+   to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .chemin {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    -webkit-animation: dash 3s linear alternate 1 forwards;
+  }
+  
+  @-webkit-keyframes dash {
+    from {
+      stroke-dashoffset: 2000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
