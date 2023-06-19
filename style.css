@@ -1181,3 +1181,47 @@ svg {
       stroke-dashoffset: 0;
     }
   }
+
+
+
+
+
+/* TEST BANNER COOKIES */
+/* Style CSS pour la bannière de consentement des cookies */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #cookie-banner p {
+    margin: 0;
+  }
+  
+  #cookie-banner button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  #cookie-banner button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Style CSS pour la section de préférences de cookies */
+  .preference-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Autres styles CSS pour votre site */
+  
