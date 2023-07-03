@@ -230,4 +230,4 @@ checkboxes.forEach(function(checkbox) {
   const typeCookie = checkbox.getAttribute('data-cookie');
   checkbox.checked = obtenirPreference(typeCookie);
 });
-*/
+*/ 
