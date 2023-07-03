@@ -68,11 +68,10 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 5%;
-    height: 700px;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .presentation-gauche {
@@ -153,11 +152,13 @@ h3 {
 #events {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 25%;
 }
 
 .events-left {
     width: 60%;
-    margin-left: 10%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -174,22 +175,44 @@ h3 {
 
 #events h3 {
     color: #5260F2;
-    padding-top: 50px;
     justify-content: end;
 }
 
 .event-dash {
     border: 3px dashed #5260F2;
+    margin-bottom: 10%;
 }
 
-#events p {
+.event-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 5%;
+
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
     font-size: 24px;
+    font-weight: 300;
     line-height: 40px;
-    color: #5260F2;
+    letter-spacing: 0em;
+    text-align: center;
 }
+
+.event-fleche {
+ width: 20%;
+    margin-left: 10%;
+    margin-top: -3%;
+}
+
+.event-fleche img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
 
 
 /* EVENTS CONTENT */ 
