@@ -5,7 +5,7 @@ async function getCardsMap() {
       .then((data) => (localisations = data.localisations));
     return {
       localisations: [...localisations]
-    };
+    }
 }
 
 async function displayCardsMap() {
