@@ -154,7 +154,7 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
     margin-top: 5%;
-    margin-bottom: 25%;
+    margin-bottom: 5%;
 }
 
 .events-left {
@@ -192,7 +192,6 @@ h3 {
     border: 2px solid black;
     border-radius: 50px;
     padding: 5%;
-
     font-family: 'Roboto';
     font-size: 24px;
     font-weight: 300;
@@ -202,8 +201,8 @@ h3 {
 }
 
 .event-fleche {
- width: 20%;
-    margin-left: 10%;
+    width: 20%;
+    margin-left: 12%;
     margin-top: -3%;
 }
 
@@ -216,43 +215,61 @@ h3 {
 
 
 /* EVENTS CONTENT */ 
-#events-content {
+#events-content-container {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 300px;
-}
-.events-content-left {
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25%;
-}
-
-.event-content-title {
-    display: flex;
-    align-items: center;
+    margin-bottom: 5%;
     justify-content: center;
-    border: 2px solid green;
-    border-radius: 5px;
+    align-items: baseline;
 }
 
-.event-content-title span {
-    margin-right: 20px;
+.event-content {
+    text-align: center;
+}
+
+.event-number {
+    background: #21812b;
+    border-radius: 4em;
+    -moz-border-radius: 4em;
+    -webkit-border-radius: 4em;
+    color: #ffffff;
+    height: 4em;
+    width: 4em;
+    display: inline-block;
+    font-family: 'Roboto', Helvetica, Sans-serif;
+    font-size: 25px;
+    line-height: 4em;
+    text-align: center;
+}
+
+.event-number:hover {
+    background: #FF5A00;
+    -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out; 
+}
+
+.event-text {
+    margin-top: 30px;
     font-size: 20px;
-    border: 1px solid blue;
-    border-radius: 50%;
 }
 
-
-.events-content-right {
-    width: 30%;
-    position: relative;
-    top: 250px;
+.event-dash-content {
+    border: 1px dashed black;
+    width: 15%;
+    height: 1px;
+    text-align: center;
 }
 
-.events-content-right img {
-    width: 120%;
+.event-frise {
+    margin-bottom: 5%;
 }
+
+.event-frise img {
+    width: 100%;
+}
+
 
 
 
