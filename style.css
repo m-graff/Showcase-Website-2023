@@ -280,22 +280,28 @@ h3 {
 
 /* SECTION PRESTATIONS */
 #prestations {
-    width: 100%;
     height: auto;
-    padding: 10%;
+    padding: 5% 0% 10% 0%;
     margin-bottom: 200px;
     background-color: #1D1D1B;
 }
 
+.prestations-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: auto;
+    width: 80%;
+}
+
 #prestations h3 {
     color: white;
-    justify-content: center;
 }
 
 .prestations-dash {
     border: 3px dashed white;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 80%;
 }
 
 .prestations-description {
@@ -307,19 +313,25 @@ h3 {
     color: white;
     margin-bottom: 50px;
     text-align: center;
-    width: 80%;
-    margin: auto;
+    width: 60%;
 }
 
 .prestations-cards-bloc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    justify-items: center;
-    margin-top: 5%; 
+    gap: 50px;
+    margin: auto;
+    padding: 0 10%;
 }
 
 .prestations-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E89505; 
+    background: white;
+    border-radius: 30px;
+    height: 280px;
+    width: auto;
     cursor: pointer;
     transition: all 0.3s ease;
     background-color: white;
@@ -328,6 +340,16 @@ h3 {
 .prestations-card:hover {
     color: #e27b5b;
     border-color: #e27b5b;
+}
+.prestations-card h4 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 50px;
+    color: #1D1D1B;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 .prestations-card-bottom {
@@ -384,27 +406,6 @@ h3 {
     right: -5px;
     top: -5px;
     transform: rotate(90deg);
-}
-
-.prestations-card {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid #E89505; 
-    background: white;
-    border-radius: 30px;
-    height: 260px;
-    width: 310px;
-}
-
-.prestations-card h4 {
-    font-family: 'Righteous';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    color: #1D1D1B;
-    margin-top: 10%;
-    margin-left: 5%;
 }
 
 .icone1 {
