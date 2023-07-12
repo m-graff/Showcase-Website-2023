@@ -155,14 +155,24 @@ btn.addEventListener('click', function(e) {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
+/* Bouton Scroll to Form (ancre bouton "Contact" Hero )*/
+let ancreTop = document.getElementById('contact-hero');
 
-
-/* Bouton Scroll to Form (ancre bouton "let's go") */
-function scrollToForm(event) {
-  event.preventDefault();
+ancreTop.addEventListener('click', function(e) {
+  e.preventDefault();
   const formSection = document.getElementById('contact');
   formSection.scrollIntoView({ behavior: 'smooth' });
-}
+})
+
+/* Bouton Scroll to Form (ancre bouton "let's go") */
+let ancreBottom = document.getElementById('link');
+
+ancreBottom.addEventListener('click', function(e) {
+  e.preventDefault();
+  const formSection = document.getElementById('contact');
+  formSection.scrollIntoView({ behavior: 'smooth' });
+})
+
 
 
 
