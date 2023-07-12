@@ -157,6 +157,12 @@ btn.addEventListener('click', function(e) {
 
 
 
+/* Bouton Scroll to Form (ancre bouton "let's go") */
+function scrollToForm(event) {
+  event.preventDefault();
+  const formSection = document.getElementById('contact');
+  formSection.scrollIntoView({ behavior: 'smooth' });
+}
 
 
 
@@ -231,3 +237,28 @@ checkboxes.forEach(function(checkbox) {
   checkbox.checked = obtenirPreference(typeCookie);
 });
 */ 
+
+
+
+
+
+
+
+
+/* !!! --- EXEMPLE REACT'S CONTEXT : METHOD TO EFFICIENT STATE PROPAGATION  - A SUPPRIMER ULTERIEUREMENT --- !!!
+
+1. Prop Drilling : The app component creates the theme object and sets the initial value
+2. App "<User them={theme} />" : Passes theme as prop to the User component
+3. User "<Profile theme={theme} />" : Passes theme as a prop to the Profile component
+4. Profil "Button theme={theme} />" : Passes theme to the Button component where it is supposed to be used
+5. Button "Use thme.bgColor here"
+
+This is more commonly know as prop drilling
+The user of Context solves this problem. Because instead of passing the piece of data through all the components where it does not get used, we only need three touchpoints : 
+- CREATION : Where the Context is created
+- UPDATION - Where the Context value can be updated
+- CONSUMPTION - Where the Context value can be read
+
+*/
+
+
