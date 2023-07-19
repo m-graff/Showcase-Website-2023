@@ -842,6 +842,17 @@ area:hover {
     margin-bottom: 5%;
 }
 
+.blueShape-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+    margin-top: -12%;
+}
+
+.blueShape-top img {
+    width: 50%;
+}
+
 .galerie-grid {
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1135,9 +1146,13 @@ textarea {
 */
 
 
+.blueShape-bottom {
+    display: flex;
+}
 
-
-
+.blueShape-bottom img {
+    width: 50%;
+}
 
 
 /* FOOTER */

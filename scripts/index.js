@@ -139,22 +139,6 @@ closeButton.addEventListener("click", () => {
 */
 
 
-/* -- Bouton Scroll to Top --*/
-let btn = document.getElementById('scrollToTop');
-
-window.onscroll = function() {
-  if (window.pageYOffset > 300) {
-    btn.classList.add('show');
-  } else {
-    btn.classList.remove('show');
-  }
-};
-
-btn.addEventListener('click', function(e) {
-  e.preventDefault();
-  window.scrollTo({top: 0, behavior: 'smooth'});
-});
-
 /* Bouton Scroll to Form (ancre bouton "Contact" Hero )*/
 let ancreTop = document.getElementById('contact-hero');
 
@@ -173,7 +157,21 @@ ancreBottom.addEventListener('click', function(e) {
   formSection.scrollIntoView({ behavior: 'smooth' });
 })
 
+/* -- Bouton Scroll to Top --*/
+let btn = document.getElementById('scrollToTop');
 
+window.onscroll = function() {
+  if (window.pageYOffset > 300) {
+    btn.classList.add('show');
+  } else {
+    btn.classList.remove('show');
+  }
+};
+
+btn.addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
 
 
 
