@@ -1000,36 +1000,39 @@ area:hover {
 
 .formulaire-fleche {
     margin-right: 15%;
-    position: absolute;
-    margin-top: 25%;
+    width: 20%;
 }
 
-.formualaire-fleche img {
-    width: auto;
-    object-fit: contain;
+.formulaire-fleche img {
+    width: 80%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .formulaire-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .formulaire-content img {
     width: 40%;
-    margin-top: 20%;
+    margin-top: 10%;
+    margin-right: 10%;
     object-fit: contain;
 }
 
 #contact {
-    margin: auto;
-    width: 50%;
-    padding: 2%;
     color: #5260F2DE;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(10px, auto);
     font-size: 18px;
+    margin-top: -15%;
+    margin-left: 5%;
+    height: 900px;
 }
 
 #contact div {
@@ -1044,16 +1047,16 @@ area:hover {
 input::placeholder {
     font-size: 18px;
     color: #5260F2DE;
-    
 }
 
 input {
-    height: 30px;
-    margin-top: 10px;
     border-style: none;
     border-bottom-style: solid;
     border-width: 0 0 1px 0;
     border-color: #5260F2; 
+    font-size: 20px;
+    color: #5260F2; 
+    font-style: bold;
 }
 
 input:focus,
