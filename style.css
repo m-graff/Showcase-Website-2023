@@ -65,7 +65,6 @@ h2 {
 /* SECTION PRESENTATION */
 #presentation {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 5%;
     margin-left: 5%;
@@ -75,8 +74,8 @@ h2 {
 }
 
 .presentation-gauche {
-    margin-top: 20%;
     width: 30%;
+    margin-top: 10%;
 }
 
 .presentation-gauche img {
@@ -201,6 +200,7 @@ h3 {
 #events h3 {
     color: #5260F2;
     justify-content: end;
+    text-align: right;
 }
 
 .event-dash {
@@ -242,6 +242,8 @@ h3 {
 /* EVENTS CONTENT */ 
 #events-content-container {
     display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
     margin-bottom: 5%;
     justify-content: center;
     align-items: baseline;
@@ -306,8 +308,9 @@ h3 {
 /* SECTION PRESTATIONS */
 #prestations {
     height: auto;
-    padding: 5% 0% 10% 0%;
-    margin-bottom: 200px;
+    padding: 10% 0% 10% 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: #1D1D1B;
 }
 
@@ -559,6 +562,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 10%;
 }
 
 .lieux-contenu {
@@ -825,7 +829,7 @@ area:hover {
 
 /* GALERIE PHOTOS */
 #galerie {
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -834,6 +838,7 @@ area:hover {
     margin-bottom: 50px;
     display: flex;
     justify-content: end;
+    text-align: right;
 }
 
 .galerie-dash {
@@ -969,6 +974,7 @@ area:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 10%;
 }
 
 .formulaire-intro {
@@ -1264,21 +1270,144 @@ footer i, footer span {
 
 /* TEST RESPONSIVE --- PRESTATIONS */ 
 /* Media Queries Desktop  */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
+
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .presentation-droite {
+        gap: 30px;
+    }
+
+    .presentation-droite p {
+        font-size: 20px;
+    }
+
+    #contact-hero {
+        font-size: 2rem;
+    }
+
+    .events-left {
+        gap: 30px;
+    }
+
+    .event-text-container {
+        font-size: 20px;
+    }
+
+    #events-content-container {
+        margin-bottom: 10%;
+    }
+
+    .event-text {
+        font-size: 18px;
+    }
+
+    .prestations-header {
+        gap: 30px;
+    }
+
+    .prestations-description {
+        font-size: 20px;
+    }
+
+    .prestations-cards-bloc {
+        padding: 0 3%;
+        gap: 20px;
+    }
+
+    .prestations-card h4 {
+        font-size: 1.5em;
+    }
+
+    .prestations-card-bottom p {
+        font-size: 20px;
+    }
+
+    .lieux-contenu {
+        gap: 30px;
+    }
+
+    .lieux-description {
+        font-size: 20px;
+    }
+
+    .link-container button {
+        font-size: 2rem !important;
+    }
+    .link-container span {
+        font-size: 30px !important;
+    }
+
+    .formulaire-intro {
+        gap: 30px;
+    }
+    .formulaire-fleche {
+        margin-right: 5%;
+    }
+    .formulaire-content img {
+        margin-right: 0;
+        width: 30%;
+    }
 
 }
 
 /* Media Queries tablettes  */
 @media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .presentation-droite p {
+        font-size: 18px;
+    }
+
+    #contact-hero {
+        font-size: 1.5rem;
+    }
+
+    #events {
+        margin-top: 15%;
+    }
+    .events-left {
+        width: 80%;
+    }
+    .event-text-container {
+        font-size: 18px;
+    }
+    .event-number {
+        height: 3em;
+        width: 3em;
+        line-height: 3em;
+    }
+
     #prestations {
-        padding: 5%;
-        margin-bottom: 100px;
+        margin-top: 15%;
     }
 
     #prestations p {
-        font-size: 24px;
-        line-height: 36px;
         width: 100%;
+        font-size: 18px;
     }
 
     .prestations-cards-bloc {
@@ -1300,6 +1429,39 @@ footer i, footer span {
         width: 15%;
         margin-left: 5%;
     }
+
+    #formulaire {
+        display: block;
+        margin-top: 15%;
+    }
+    .formulaire-intro {
+        margin-bottom: 15%;
+        width: auto;
+        text-align: center;
+    }
+
+    .formulaire-fleche {
+        display: none;
+    }
+
+    .formulaire-content {
+        flex-direction: column;
+    }
+    
+    .formulaire-content img {
+        width: 70%;
+        margin: auto;
+    }
+
+    #contact {
+        height: auto;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    .contact-btn-container {
+        margin-top: 10%;
+    }
 }
 
 /* Media Queries mobiles */
@@ -1313,6 +1475,14 @@ footer i, footer span {
         grid-gap: 10px;
     }
 }
+
+
+
+
+
+
+
+
 
 
 /* TEST FLECHE ANIMEE */

@@ -161,7 +161,7 @@ ancreBottom.addEventListener('click', function(e) {
 let btn = document.getElementById('scrollToTop');
 
 window.onscroll = function() {
-  if (window.pageYOffset > 300) {
+  if (window.scrollY > 800) {
     btn.classList.add('show');
   } else {
     btn.classList.remove('show');
