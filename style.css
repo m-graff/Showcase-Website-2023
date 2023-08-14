@@ -1454,6 +1454,7 @@ footer i, footer span {
     }
 
     #contact {
+        display: block;
         height: auto;
         width: 90%;
         margin: auto;
@@ -1466,13 +1467,176 @@ footer i, footer span {
 
 /* Media Queries mobiles */
 @media only screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #hero-banner {
+        margin-bottom: 5%;
+    }
+
+    #presentation {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .presentation-gauche {
+        width: 80%;
+        margin: auto;
+    }
+
+    .presentation-droite {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    h3 {
+        font-size: 32px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .presentation-text-1, .presentation-text-2 {
+        font-size: 16px !important;
+        line-height: 32px !important;
+    }
+
+    #contact-hero {
+        font-size: 1.3rem;
+        border: 3px solid #5260F2;
+        margin-bottom: 30px;
+    }
+
+    #events {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #events h3 {
+        text-align: center;
+    }
+
+    .events-left {
+        width: 100%;
+    }
+
+    .event-text-container {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .event-text-1, .event-text-2 {
+        font-size: 16px !important;
+        line-height: 32px !important;
+    }
+
+    .event-fleche {
+        display: none;
+    }
+
+    #events-content-container {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        gap: 30px;
+        padding: 50px 0;
+    }
+
+    .event-dash-content {
+        display: none;
+    }
+
+    .event-text {
+        margin-top: 10px;
+    }
+
+    .event-frise {
+        display: none;
+    }
+
     #prestations {
-        padding: 5%;
+        margin-top: 50px;
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .prestations-header {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .prestations-dash {
+        width: 100%;
+    }
+
+    .prestations-description {
+        font-size: 16px;
+        line-height: 30px;
     }
 
     .prestations-cards-bloc {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
+    }
+
+    .prestations-card {
+        height: 240px;
+    }
+
+    .prestations-card h4 {
+        font-size: 24px;
+    }
+
+    #lieux {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #link {
+        height: 200px;
+    }
+
+    .link-container button {
+        font-size: 1.3rem !important;
+        padding: .5rem 1rem;
+    }
+
+    .link-container span, #link i{
+        font-size: 1.3rem !important;
+    }
+
+    #formulaire {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #form-radio-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contact {
+        width: 95%;
+    }
+
+    #contact > div {
+        margin-bottom: 10px;
+    }
+
+    .contact-btn-container {
+        align-items: center;
+    }
+
+    #scrollToTop {
+        right: 20px;
     }
 }
 
