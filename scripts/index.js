@@ -176,9 +176,27 @@ btn.addEventListener('click', function(e) {
 
 
 
+// TEST AJOUT ANIMATION AU SCROLL REVEAL 
 
+// ScrollReveal options
+var options = {
+  distance: '80px',
+  duration: 1000,
+  delay: 500,
+  easing: 'ease-in-out',
+  origin: 'top',
+};
 
+// Initialize ScrollReveal
+ScrollReveal.initialize(options);
 
+// Scroll event listener
+window.addEventListener('scroll', function() {
+  // Reveal each section that is currently visible
+  document.querySelectorAll('section:in-view').forEach(function(section) {
+    ScrollReveal().reveal(section);
+  });
+});
 
 
 /* TEST COOKIE BANNER
@@ -268,5 +286,6 @@ The user of Context solves this problem. Because instead of passing the piece of
 - CONSUMPTION - Where the Context value can be read
 
 */
+
 
 

@@ -1110,6 +1110,9 @@ textarea:focus {
 
 textarea {
     border: 1px solid #5260F2;
+    font-size: 20px;
+    color: #5260F2;
+    padding: 10px;
 }
 
 #form-message label {
@@ -1382,6 +1385,10 @@ footer i, footer span {
         font-size: 18px;
     }
 
+    .presentation-dash {
+        border: 2px dashed #5260F2;
+    }
+
     #contact-hero {
         font-size: 1.5rem;
     }
@@ -1391,6 +1398,9 @@ footer i, footer span {
     }
     .events-left {
         width: 80%;
+    }
+    .event-dash {
+        border: 2px dashed #5260F2;
     }
     .event-text-container {
         font-size: 18px;
@@ -1403,6 +1413,10 @@ footer i, footer span {
 
     #prestations {
         margin-top: 15%;
+    }
+
+    .prestations-dash {
+        border: 2px dashed white;
     }
 
     #prestations p {
@@ -1430,6 +1444,10 @@ footer i, footer span {
         margin-left: 5%;
     }
 
+    .galerie-dash {
+        border: 2px dashed #5260F2;
+    }
+
     #formulaire {
         display: block;
         margin-top: 15%;
@@ -1442,6 +1460,11 @@ footer i, footer span {
 
     .formulaire-fleche {
         display: none;
+    }
+    .formulaire-dash {
+        width: 80%;
+        margin: auto;
+        border: 2px dashed #5260F2;
     }
 
     .formulaire-content {
@@ -1460,8 +1483,18 @@ footer i, footer span {
         margin: auto;
         margin-bottom: 10%;
     }
+
+    #contact > div, fieldset {
+        margin-top: 10px;
+    }
+
+    #form-message {
+        margin-top: 30px !important;
+    }
+
     .contact-btn-container {
-        margin-top: 10%;
+        margin-top: 50px !important;
+        align-items: center;
     }
 }
 
@@ -1565,7 +1598,6 @@ footer i, footer span {
     #prestations {
         margin-top: 50px;
         width: 100%;
-        padding: 50px 20px;
     }
 
     .prestations-header {
@@ -1584,7 +1616,8 @@ footer i, footer span {
 
     .prestations-cards-bloc {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
+        grid-gap: 5px;
+        margin: 0 20px;
     }
 
     .prestations-card {
@@ -1613,6 +1646,25 @@ footer i, footer span {
         font-size: 1.3rem !important;
     }
 
+    #galerie h3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .galerie-dash {
+        width: 90%;
+        margin: auto;
+    }
+
+    .blueShape-top {
+        display: none;
+    }
+
+    .galerie-grid {
+        margin-top: 50px;
+    }
+
     #formulaire {
         width: 100%;
         padding: 0 20px;
@@ -1621,6 +1673,8 @@ footer i, footer span {
     #form-radio-container {
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
+        padding-left: 30px;
     }
 
     #contact {
