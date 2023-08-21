@@ -123,22 +123,6 @@ function createCard(photo, title, description) {
 
 }
 
-
-/* TEST MODAL CARD MAP : Méthode dialog + data class 
-const openButton = document.querySelector("[data-open-modal]");
-const closeButton = document.querySelector("[data-close-modal]");
-const modal = document.querySelector("[data-modal]");
-
-openButton.addEventListener("click", () => {
-    modal.classList.add("open");
-});
-
-closeButton.addEventListener("click", () => {
-    modal.classList.remove("open");
-});
-*/
-
-
 /* Bouton Scroll to Form (ancre bouton "Contact" Hero )*/
 let ancreTop = document.getElementById('contact-hero');
 
@@ -177,26 +161,22 @@ btn.addEventListener('click', function(e) {
 
 
 // TEST AJOUT ANIMATION AU SCROLL REVEAL 
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
 
-// ScrollReveal options
-var options = {
-  distance: '80px',
-  duration: 1000,
-  delay: 500,
-  easing: 'ease-in-out',
-  origin: 'top',
-};
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
 
-// Initialize ScrollReveal
-ScrollReveal.initialize(options);
-
-// Scroll event listener
-window.addEventListener('scroll', function() {
-  // Reveal each section that is currently visible
-  document.querySelectorAll('section:in-view').forEach(function(section) {
-    ScrollReveal().reveal(section);
-  });
-});
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
 
 
 /* TEST COOKIE BANNER
@@ -264,28 +244,6 @@ checkboxes.forEach(function(checkbox) {
 });
 */ 
 
-
-
-
-
-
-
-
-/* !!! --- EXEMPLE REACT'S CONTEXT : METHOD TO EFFICIENT STATE PROPAGATION  - A SUPPRIMER ULTERIEUREMENT --- !!!
-
-1. Prop Drilling : The app component creates the theme object and sets the initial value
-2. App "<User them={theme} />" : Passes theme as prop to the User component
-3. User "<Profile theme={theme} />" : Passes theme as a prop to the Profile component
-4. Profil "Button theme={theme} />" : Passes theme to the Button component where it is supposed to be used
-5. Button "Use thme.bgColor here"
-
-This is more commonly know as prop drilling
-The user of Context solves this problem. Because instead of passing the piece of data through all the components where it does not get used, we only need three touchpoints : 
-- CREATION : Where the Context is created
-- UPDATION - Where the Context value can be updated
-- CONSUMPTION - Where the Context value can be read
-
-*/
 
 
 
