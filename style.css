@@ -943,12 +943,14 @@ input {
     border-color: #5260F2; 
     font-size: 20px;
     color: #5260F2; 
-    font-style: bold;
 }
 
-input:focus,
+input:focus {
+    outline: none;
+    border-width: 0 0 2px 0;
+}
+
 textarea:focus {
-    border-color: #84e194; 
     outline: none;
     border-radius: 5px;
 }
@@ -1672,7 +1674,7 @@ footer i, footer span {
 
 
 
-/* TEST FLECHE ANIMEE */
+/* TEST FLECHE ANIMEE 
 
 .test-svg {
     margin-left: 15%;
@@ -1707,7 +1709,7 @@ svg {
   }
 
 
-
+*/
 
 
 
